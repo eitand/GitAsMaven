@@ -62,7 +62,7 @@ uploadArchives {
     repositories.mavenDeployer {
         configuration = configurations.deployLibrary
 	println("URL 1: " + 'git:releases://git@bitbucket.org:' + COMPANY + '/' + REPOSITORY_NAME + '.git')
-	println("URL 2: " + "git:releases://https://USERNAME:APP_PASSWORD@bitbucket.org/COMPANY/repo-release.git")
+	println("URL 2: " + 'git:releases://https://' + USERNAME + ':' + APP_PASSWORD + '@bitbucket.org/' + COMPANY + '/repo-release.git')
         repository(url: 'git:releases://git@bitbucket.org:' + COMPANY + '/' + REPOSITORY_NAME + '.git')
 //        repository(url: 'git:releases://https://' + USERNAME + ':' + APP_PASSWORD + '@bitbucket.org/' + COMPANY + '/repo-release.git')
 
